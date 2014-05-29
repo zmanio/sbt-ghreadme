@@ -1,7 +1,6 @@
 import SiteKeys._
-import GhPagesKeys._
-import bintray.{ Keys => bintrayKeys }
-import bintrayKeys._
+import GhPagesKeys.ghpagesNoJekyll
+import bintray.Keys._
 
 //
 // Basic project information.
@@ -61,6 +60,6 @@ publishMavenStyle := false
 
 bintrayPublishSettings
 
-bintrayKeys.repository in bintray := "sbt-plugins"
+repository in bintray := "sbt-plugins"
 
 bintrayOrganization in bintray := None
