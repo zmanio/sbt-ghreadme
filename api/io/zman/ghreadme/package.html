@@ -1,0 +1,267 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+        <head>
+          <title>ghreadme - io.zman.ghreadme</title>
+          <meta name="description" content="ghreadme - io.zman.ghreadme" />
+          <meta name="keywords" content="ghreadme io.zman.ghreadme" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../../index.html';
+            var hash = 'io.zman.ghreadme.package';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="value">
+      <div id="definition">
+        <img src="../../../lib/package_big.png" />
+        <p id="owner"><a href="../../package.html" class="extype" name="io">io</a>.<a href="../package.html" class="extype" name="io.zman">zman</a></p>
+        <h1>ghreadme</h1>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ghreadme</span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>A SBT plugin that extends sbt-site by converting github-style
+README files into Jekyll documents included in the site.
+</p></div><div class="toggleContainer block">
+          <span class="toggle">Linear Supertypes</span>
+          <div class="superTypes hiddenContent"><span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+        </div></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        <div id="order">
+              <span class="filtertype">Ordering</span>
+              <ol>
+                
+                <li class="alpha in"><span>Alphabetic</span></li>
+                <li class="inherit out"><span>By inheritance</span></li>
+              </ol>
+            </div>
+        <div id="ancestors">
+                <span class="filtertype">Inherited<br />
+                </span>
+                <ol id="linearization">
+                  <li class="in" name="io.zman.ghreadme"><span>ghreadme</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                </ol>
+              </div><div id="ancestors">
+            <span class="filtertype"></span>
+            <ol>
+              <li class="hideall out"><span>Hide All</span></li>
+              <li class="showall in"><span>Show all</span></li>
+            </ol>
+            <a href="http://docs.scala-lang.org/overviews/scaladoc/usage.html#members" target="_blank">Learn more about member selection</a>
+          </div>
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="io.zman.ghreadme.GhReadmeDsl" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="GhReadmeDslextendsAnyRef"></a>
+      <a id="GhReadmeDsl:GhReadmeDsl"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="GhReadmeDsl.html"><span class="name">GhReadmeDsl</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4>
+      <p class="comment cmt">Interface that provides a DSL for describing README file mapping and configuration.</p>
+    </li><li name="io.zman.ghreadme.ReadmeMapping" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ReadmeMapping=(String,io.zman.ghreadme.package.ReadmeSettings)"></a>
+      <a id="ReadmeMapping:(String,ReadmeSettings)"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">type</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ReadmeMapping</span><span class="result"> = (<span class="extype" name="scala.Predef.String">String</span>, <a href="#ReadmeSettings=Seq[(String,String)]" class="extmbr" name="io.zman.ghreadme.ReadmeSettings">ReadmeSettings</a>)</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">A mapping for a README file including the YAML front-matter to embed.</p>
+    </li><li name="io.zman.ghreadme.ReadmeMappings" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ReadmeMappings=Seq[(String,io.zman.ghreadme.package.ReadmeSettings)]"></a>
+      <a id="ReadmeMappings:ReadmeMappings"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">type</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ReadmeMappings</span><span class="result"> = <span class="extype" name="scala.collection.Seq">Seq</span>[(<span class="extype" name="scala.Predef.String">String</span>, <a href="#ReadmeSettings=Seq[(String,String)]" class="extmbr" name="io.zman.ghreadme.ReadmeSettings">ReadmeSettings</a>)]</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">A collection of readme file mappings.</p>
+    </li><li name="io.zman.ghreadme.ReadmeSetting" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ReadmeSetting=(String,String)"></a>
+      <a id="ReadmeSetting:(String,String)"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">type</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ReadmeSetting</span><span class="result"> = (<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>)</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">A single element of YAML front-matter.</p>
+    </li><li name="io.zman.ghreadme.ReadmeSettings" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ReadmeSettings=Seq[(String,String)]"></a>
+      <a id="ReadmeSettings:ReadmeSettings"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">type</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ReadmeSettings</span><span class="result"> = <span class="extype" name="scala.collection.Seq">Seq</span>[(<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>)]</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">A collection of YAML front-matter.</p>
+    </li></ol>
+            </div>
+
+        
+
+        <div id="values" class="values members">
+              <h3>Value Members</h3>
+              <ol><li name="io.zman.ghreadme.GhReadmeDsl" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="GhReadmeDsl"></a>
+      <a id="GhReadmeDsl:GhReadmeDsl"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="GhReadmeDsl$.html"><span class="name">GhReadmeDsl</span></a>
+      </span>
+      </h4>
+      <p class="comment cmt">Types that drive the README DSL.</p>
+    </li><li name="io.zman.ghreadme.ReadmeMapping" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ReadmeMapping"></a>
+      <a id="ReadmeMapping:ReadmeMapping"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="package$$ReadmeMapping$.html"><span class="name">ReadmeMapping</span></a><span class="result"> extends <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      <p class="comment cmt">Factory for readme mappings.</p>
+    </li><li name="io.zman.ghreadme.ReadmeMappings" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ReadmeMappings"></a>
+      <a id="ReadmeMappings:ReadmeMappings"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="package$$ReadmeMappings$.html"><span class="name">ReadmeMappings</span></a>
+      </span>
+      </h4>
+      <p class="comment cmt">Factory for collections of readme file mappings.</p>
+    </li><li name="io.zman.ghreadme.ReadmeSetting" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ReadmeSetting"></a>
+      <a id="ReadmeSetting:ReadmeSetting"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="package$$ReadmeSetting$.html"><span class="name">ReadmeSetting</span></a><span class="result"> extends <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      <p class="comment cmt">Factory for readme settings.</p>
+    </li><li name="io.zman.ghreadme.ReadmeSettings" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ReadmeSettings"></a>
+      <a id="ReadmeSettings:ReadmeSettings"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="package$$ReadmeSettings$.html"><span class="name">ReadmeSettings</span></a>
+      </span>
+      </h4>
+      <p class="comment cmt">Factory for collections of readme settings.</p>
+    </li><li name="io.zman.ghreadme.SbtGhReadme" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="SbtGhReadme"></a>
+      <a id="SbtGhReadme:SbtGhReadme"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="SbtGhReadme$.html"><span class="name">SbtGhReadme</span></a><span class="result"> extends <span class="extype" name="sbt.Plugin">Plugin</span></span>
+      </span>
+      </h4>
+      <p class="comment cmt">Implementation of the sbt-ghreadme plugin.</p>
+    </li></ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        <div class="parent" name="scala.AnyRef">
+              <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
+            </div><div class="parent" name="scala.Any">
+              <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>
+            </div>
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+      <script defer="defer" type="text/javascript" id="jquery-js" src="../../../lib/jquery.js"></script><script defer="defer" type="text/javascript" id="jquery-ui-js" src="../../../lib/jquery-ui.js"></script><script defer="defer" type="text/javascript" id="tools-tooltip-js" src="../../../lib/tools.tooltip.js"></script><script defer="defer" type="text/javascript" id="template-js" src="../../../lib/template.js"></script>
+    </body>
+      </html>
