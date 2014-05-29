@@ -11,7 +11,7 @@ sbtPlugin := true
 
 name := "sbt-ghreadme"
 
-version := "1.0-SNAPSHOT"
+version := "1.0"
 
 sbtVersion in Global := "0.13.2" 
 
