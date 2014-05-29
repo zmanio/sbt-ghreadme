@@ -1,0 +1,5 @@
+name: zman.io
+rss: sbt-ghreadme.xml
+markdown: redcarpet
+pygments: true
+layouts: ./_zman.io/_layouts
