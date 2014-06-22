@@ -10,13 +10,13 @@ sbtPlugin := true
 
 name := "sbt-ghreadme"
 
-version := "1.0"
+version := "1.1"
 
 sbtVersion in Global := "0.13.2" 
 
 scalaVersion in Global := "2.10.4" 
 
-description := "A SBT plugin that extends sbt-site by converting github-style README files into Jekyll documents included in the site."
+description := "A SBT plugin that extends sbt-site by converting github-style README files into Jekyll documents to be included in the site."
 
 homepage := Some(url("http://zman.io/sbt-ghreadme/"))
 

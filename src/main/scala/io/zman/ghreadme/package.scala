@@ -1,7 +1,5 @@
 package io.zman
 
-import sbt._
-
 /**
  * A SBT plugin that extends sbt-site by converting github-style
  * README files into Jekyll documents included in the site.
@@ -41,7 +39,7 @@ package object ghreadme {
   /**
    * A mapping for a README file including the YAML front-matter to embed.
    */
-  type ReadmeMapping = (String, ReadmeSettings)
+  type ReadmeMapping = (String, String, ReadmeSettings)
 
   /**
    * Factory for readme mappings.
@@ -49,7 +47,8 @@ package object ghreadme {
   object ReadmeMapping {
 
     /** Creates a readme mapping. */
-    def apply(path: String, settings: ReadmeSettings = ReadmeSettings()): ReadmeMapping = path -> settings
+    def apply(source: String, destination: String, settings: ReadmeSettings = ReadmeSettings()): ReadmeMapping =
+      (source, destination, settings)
 
   }
 
