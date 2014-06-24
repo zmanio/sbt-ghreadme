@@ -1,4 +1,5 @@
 import SiteKeys._
+import GhReadmeKeys._
 import GhPagesKeys.ghpagesNoJekyll
 import bintray.Keys._
 
@@ -46,11 +47,27 @@ includeFilter in makeSite := "*.html" | "*.css" | "*.png" | "*.jpg" | "*.gif" | 
 
 site.includeScaladoc("api")
 
+ghreadme.settings
+
+readmeMappings ++= Seq(
+  "." --- Seq(
+    "title"   -> "sbt-ghreadme",
+    "tagline" -> "github readmes on your site",
+    "layout"  -> "page",
+    "cover"   -> "cover.jpg"
+  ),
+  "changelog" --- Seq(
+    "title"   -> "sbt-ghreadme history",
+    "layout"  -> "page",
+    "cover"   -> "cover.jpg"
+  )
+)
+
 ghpages.settings
 
 ghpagesNoJekyll := false
 
-git.remoteRepo := s"https://github.com/zmanio/sbt-ghreadme.git"
+git.remoteRepo := s"https://${sys.env("GH_TOKEN")}@github.com/zmanio/sbt-ghreadme.git"
 
 //
 // Publishing to Bintray
