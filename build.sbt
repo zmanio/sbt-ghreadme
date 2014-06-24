@@ -50,7 +50,7 @@ ghpages.settings
 
 ghpagesNoJekyll := false
 
-git.remoteRepo := s"https://${sys.env("SBTGITUSERNAME")}@github.com:zmanio/sbt-ghreadme.git"
+git.remoteRepo := s"https://${sys.env("SBTGITUSERNAME")}@github.com/zmanio/sbt-ghreadme.git"
 
 //
 // Publishing to Bintray
