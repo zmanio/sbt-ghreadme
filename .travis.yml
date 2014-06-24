@@ -14,6 +14,7 @@ env:
 before_script:
   - git config --global user.email "z@zman.io"
   - git config --global user.name "zmanio-ci"
+  - git config --global push.default simple
   
 script: sbt ++$TRAVIS_SCALA_VERSION --warn test ghpages-push-site
 

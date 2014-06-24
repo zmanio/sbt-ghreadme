@@ -52,7 +52,7 @@ ghreadme.settings
 readmeMappings ++= Seq(
   "." --- Seq(
     "title"   -> "sbt-ghreadme",
-    "tagline" -> "github readmes on your site",
+    "tagline" -> "github readmes for sites",
     "layout"  -> "page",
     "cover"   -> "cover.jpg"
   ),
