@@ -7,6 +7,12 @@ branches:
   only:
     - master
 
+script: "sbt test ghpages-push-site"
+
+env:
+  global:
+    secure: "b+Mbzhb6oN84vNKRwZxIVWRpiWdsSyO5RrrfMVASb47eb9tzeEVQIXyjyLrZZs6r3jyD/q+fiC5vr/jcF4GtYJmmJ3jT5OJh54lDbLCDNlv3fCOzY3QKmCzKXXL9T90idblyjNvoGveA0usNT0mbbICMo4Eldv3b0UhYUDT4AJ8="
+
 notifications:
   email:
     - z@zman.io
