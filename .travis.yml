@@ -16,7 +16,7 @@ before_script:
   - git config --global user.name "zmanio-ci"
   - git config credential.helper "store --file=.git/credentials"
   - echo "https://${GH_TOKEN}:@github.com" > .git/credentials
-  - echo .git/credentials
+  - cat .git/credentials
   
 script: "sbt test ghpages-push-site"
 
