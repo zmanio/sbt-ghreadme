@@ -150,19 +150,6 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
-    </li><li name="io.zman.ghreadme.GhReadmeDsl#README" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="README:String"></a>
-      <a id="README:String"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">val</span>
-      </span>
-      <span class="symbol">
-        <span class="name">README</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
-      </span>
-      </h4>
-      <p class="shortcomment cmt">An alias for the root README file.</p><div class="fullcomment"><div class="comment cmt"><p>An alias for the root README file.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="GhReadmeDsl.html" class="extype" name="io.zman.ghreadme.GhReadmeDsl">GhReadmeDsl</a></dd></dl></div>
     </li><li name="scala.Any#asInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="asInstanceOf[T0]:T0"></a>
       <a id="asInstanceOf[T0]:T0"></a>
@@ -319,15 +306,15 @@
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="io.zman.ghreadme.GhReadmeDsl#readmeMappingToRichReadmeMapping" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="readmeMappingToRichReadmeMapping(self:(String,io.zman.ghreadme.ReadmeSettings)):io.zman.ghreadme.GhReadmeDsl.RichReadmeMapping"></a>
-      <a id="readmeMappingToRichReadmeMapping((String,ReadmeSettings)):RichReadmeMapping"></a>
+      <a id="readmeMappingToRichReadmeMapping(self:(String,String,io.zman.ghreadme.ReadmeSettings)):io.zman.ghreadme.GhReadmeDsl.RichReadmeMapping"></a>
+      <a id="readmeMappingToRichReadmeMapping((String,String,ReadmeSettings)):RichReadmeMapping"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">implicit </span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">readmeMappingToRichReadmeMapping</span><span class="params">(<span name="self">self: (<span class="extype" name="scala.Predef.String">String</span>, <a href="package.html#ReadmeSettings=Seq[(String,String)]" class="extmbr" name="io.zman.ghreadme.ReadmeSettings">ReadmeSettings</a>)</span>)</span><span class="result">: <a href="GhReadmeDsl$$RichReadmeMapping.html" class="extype" name="io.zman.ghreadme.GhReadmeDsl.RichReadmeMapping">RichReadmeMapping</a></span>
+        <span class="name">readmeMappingToRichReadmeMapping</span><span class="params">(<span name="self">self: (<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>, <a href="package.html#ReadmeSettings=Seq[(String,String)]" class="extmbr" name="io.zman.ghreadme.ReadmeSettings">ReadmeSettings</a>)</span>)</span><span class="result">: <a href="GhReadmeDsl$$RichReadmeMapping.html" class="extype" name="io.zman.ghreadme.GhReadmeDsl.RichReadmeMapping">RichReadmeMapping</a></span>
       </span>
       </h4>
       <p class="shortcomment cmt">Converts a readme mapping into a rich readme mapping.</p><div class="fullcomment"><div class="comment cmt"><p>Converts a readme mapping into a rich readme mapping.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="GhReadmeDsl.html" class="extype" name="io.zman.ghreadme.GhReadmeDsl">GhReadmeDsl</a></dd></dl></div>
@@ -340,20 +327,20 @@
         <span class="kind">val</span>
       </span>
       <span class="symbol">
-        <span class="name">readmeMappings</span><span class="result">: <span class="extype" name="sbt.TaskKey">TaskKey</span>[<a href="package.html#ReadmeMappings=Seq[(String,io.zman.ghreadme.package.ReadmeSettings)]" class="extmbr" name="io.zman.ghreadme.ReadmeMappings">ReadmeMappings</a>]</span>
+        <span class="name">readmeMappings</span><span class="result">: <span class="extype" name="sbt.TaskKey">TaskKey</span>[<a href="package.html#ReadmeMappings=Seq[(String,String,io.zman.ghreadme.package.ReadmeSettings)]" class="extmbr" name="io.zman.ghreadme.ReadmeMappings">ReadmeMappings</a>]</span>
       </span>
       </h4>
       <p class="shortcomment cmt">The collection of README file mappings that will be included in the generated site.</p>
     </li><li name="io.zman.ghreadme.GhReadmeDsl#stringToReadmeMapping" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="stringToReadmeMapping(path:String):(String,io.zman.ghreadme.ReadmeSettings)"></a>
-      <a id="stringToReadmeMapping(String):(String,ReadmeSettings)"></a>
+      <a id="stringToReadmeMapping(path:String):(String,String,io.zman.ghreadme.ReadmeSettings)"></a>
+      <a id="stringToReadmeMapping(String):(String,String,ReadmeSettings)"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">implicit </span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">stringToReadmeMapping</span><span class="params">(<span name="path">path: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: (<span class="extype" name="scala.Predef.String">String</span>, <a href="package.html#ReadmeSettings=Seq[(String,String)]" class="extmbr" name="io.zman.ghreadme.ReadmeSettings">ReadmeSettings</a>)</span>
+        <span class="name">stringToReadmeMapping</span><span class="params">(<span name="path">path: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: (<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>, <a href="package.html#ReadmeSettings=Seq[(String,String)]" class="extmbr" name="io.zman.ghreadme.ReadmeSettings">ReadmeSettings</a>)</span>
       </span>
       </h4>
       <p class="shortcomment cmt">Converts a raw string into a readme mapping.</p><div class="fullcomment"><div class="comment cmt"><p>Converts a raw string into a readme mapping.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="GhReadmeDsl.html" class="extype" name="io.zman.ghreadme.GhReadmeDsl">GhReadmeDsl</a></dd></dl></div>
@@ -370,6 +357,32 @@
       </span>
       </h4>
       <p class="shortcomment cmt">Converts a raw string into a rich readme mapping.</p><div class="fullcomment"><div class="comment cmt"><p>Converts a raw string into a rich readme mapping.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="GhReadmeDsl.html" class="extype" name="io.zman.ghreadme.GhReadmeDsl">GhReadmeDsl</a></dd></dl></div>
+    </li><li name="io.zman.ghreadme.GhReadmeDsl#stringsToReadmeMapping" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="stringsToReadmeMapping(paths:(String,String)):(String,String,io.zman.ghreadme.ReadmeSettings)"></a>
+      <a id="stringsToReadmeMapping((String,String)):(String,String,ReadmeSettings)"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">stringsToReadmeMapping</span><span class="params">(<span name="paths">paths: (<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>)</span>)</span><span class="result">: (<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>, <a href="package.html#ReadmeSettings=Seq[(String,String)]" class="extmbr" name="io.zman.ghreadme.ReadmeSettings">ReadmeSettings</a>)</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Converts a pair of raw strings into a readme mapping.</p><div class="fullcomment"><div class="comment cmt"><p>Converts a pair of raw strings into a readme mapping.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="GhReadmeDsl.html" class="extype" name="io.zman.ghreadme.GhReadmeDsl">GhReadmeDsl</a></dd></dl></div>
+    </li><li name="io.zman.ghreadme.GhReadmeDsl#stringsToRichReadmeMapping" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="stringsToRichReadmeMapping(paths:(String,String)):io.zman.ghreadme.GhReadmeDsl.RichReadmeMapping"></a>
+      <a id="stringsToRichReadmeMapping((String,String)):RichReadmeMapping"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">stringsToRichReadmeMapping</span><span class="params">(<span name="paths">paths: (<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>)</span>)</span><span class="result">: <a href="GhReadmeDsl$$RichReadmeMapping.html" class="extype" name="io.zman.ghreadme.GhReadmeDsl.RichReadmeMapping">RichReadmeMapping</a></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Converts a pair of raw strings into a rich readme mapping.</p><div class="fullcomment"><div class="comment cmt"><p>Converts a pair of raw strings into a rich readme mapping.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="GhReadmeDsl.html" class="extype" name="io.zman.ghreadme.GhReadmeDsl">GhReadmeDsl</a></dd></dl></div>
     </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
       <a id="synchronized[T0](⇒T0):T0"></a>
