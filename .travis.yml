@@ -9,7 +9,7 @@ branches:
 
 env:
   global:
-    secure: "eoiIxmaP9GQ0qjzCbDGkvuq9tkyPdA4+eedKzLysn74Bi+QGQ/Nq38pDlKs0eKu/boP5GZN5BDiFqExM0Q14o+TS5f6Qiy9wXu+IVMgWxfDr2PKvDVNlxcdO7pju8FFYjkcSY3vbvlHiasAnuZt+SIXPkiu/XueFLf45ulwO14Y="
+    secure: "OeVR1i1OiBQznAbYcJF3gCSAFf3ILZB6tGbW5qePXggZNSYZvGmReAWuG6lN79Ktz3Tivelr/rkoEm2Q7gzJO3PJ/z0tnufe76aVYVv1igts43YdDQ3bGylC2bPxLG/RgsVZGmqNWaT7+10wmdrYvhUNb7H/krnLRPDu6eQQAe0="
 
 before_script:
   - git config --global user.email "z@zman.io"
