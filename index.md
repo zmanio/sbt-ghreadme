@@ -5,4 +5,4 @@ title: sbt-ghreadme
 tagline: github readmes as jekyll pages
 ---
 
-TEST 3
+TEST 6
