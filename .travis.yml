@@ -7,15 +7,17 @@ branches:
   only:
     - master
 
-before_script:
-  - git config --global user.email "z@zman.io"
-  - git config --global user.name "Travis-CI"
-  
-script: "sbt test ghpages-push-site"
-
 env:
   global:
     secure: "eoiIxmaP9GQ0qjzCbDGkvuq9tkyPdA4+eedKzLysn74Bi+QGQ/Nq38pDlKs0eKu/boP5GZN5BDiFqExM0Q14o+TS5f6Qiy9wXu+IVMgWxfDr2PKvDVNlxcdO7pju8FFYjkcSY3vbvlHiasAnuZt+SIXPkiu/XueFLf45ulwO14Y="
+
+before_script:
+  - git config --global user.email "z@zman.io"
+  - git config --global user.name "zmanio-ci"
+  - git config credential.helper "store --file=.git/credentials"
+  - echo "https://${GH_TOKEN}:@github.com" > .git/credentials
+  
+script: "sbt test ghpages-push-site"
 
 notifications:
   email:
