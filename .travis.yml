@@ -6,11 +6,7 @@ scala:
 branches:
   only:
     - master
-
-env:
-  global:
-    secure: "OeVR1i1OiBQznAbYcJF3gCSAFf3ILZB6tGbW5qePXggZNSYZvGmReAWuG6lN79Ktz3Tivelr/rkoEm2Q7gzJO3PJ/z0tnufe76aVYVv1igts43YdDQ3bGylC2bPxLG/RgsVZGmqNWaT7+10wmdrYvhUNb7H/krnLRPDu6eQQAe0="
-
+    
 before_script:
   - git config --global user.email "z@zman.io"
   - git config --global user.name "zmanio-ci"

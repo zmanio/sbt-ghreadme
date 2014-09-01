@@ -52,14 +52,15 @@ ghreadme.settings
 readmeMappings ++= Seq(
   "." --- Seq(
     "title"   -> "sbt-ghreadme",
-    "tagline" -> "github readmes for sites",
-    "layout"  -> "page",
-    "cover"   -> "cover.jpg"
+    "headline" -> "github readmes moonlighting as jekyll documents",
+    "layout"  -> "home",
+    "cover"   -> "sbt-ghreadme.jpg"
   ),
   "changelog" --- Seq(
     "title"   -> "sbt-ghreadme history",
+    "headline" -> "robots building websites since 2014",
     "layout"  -> "page",
-    "cover"   -> "cover.jpg"
+    "cover"   -> "sbt-ghreadme.jpg"
   )
 )
 
@@ -67,7 +68,7 @@ ghpages.settings
 
 ghpagesNoJekyll := false
 
-git.remoteRepo := s"https://${sys.env("GH_TOKEN")}@github.com/zmanio/sbt-ghreadme.git"
+git.remoteRepo := (sys.env get "GH_TOKEN" map (t => s"https://$t:@github.com/") getOrElse "git@github.com:") + "zmanio/sbt-ghreadme.git"
 
 //
 // Publishing to Bintray
