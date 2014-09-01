@@ -1,9 +1,11 @@
 ---
 title: sbt-ghreadme
-tagline: github readmes for sites
-layout: page
-cover: cover.jpg
+headline: github readmes moonlighting as jekyll documents
+layout: home
+cover: sbt-ghreadme.jpg
 ---
+sbt-ghreadme
+
 The [sbt-ghreadme](http://zman.io/sbt-ghreadme/) project is a SBT plugin that extends [sbt-site](https://github.com/sbt/sbt-site) by converting GitHub-style README files into Jekyll documents to be included in the site.
 
 This plugin is aimed at projects that:

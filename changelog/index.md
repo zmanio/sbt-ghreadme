@@ -1,7 +1,8 @@
 ---
 title: sbt-ghreadme history
+headline: robots building websites since 2014
 layout: page
-cover: cover.jpg
+cover: sbt-ghreadme.jpg
 ---
 ## 1.1 (2014-06-22)
 
