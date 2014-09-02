@@ -53,14 +53,12 @@ readmeMappings ++= Seq(
   "." --- Seq(
     "title"   -> "sbt-ghreadme",
     "headline" -> "github readmes moonlighting as jekyll documents",
-    "layout"  -> "home",
-    "cover"   -> "sbt-ghreadme.jpg"
+    "layout"  -> "home"
   ),
   "changelog" --- Seq(
     "title"   -> "sbt-ghreadme history",
     "headline" -> "robots building websites since 2014",
-    "layout"  -> "page",
-    "cover"   -> "sbt-ghreadme.jpg"
+    "layout"  -> "page"
   )
 )
 
