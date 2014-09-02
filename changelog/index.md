@@ -1,5 +1,5 @@
 ---
-title: sbt-ghreadme history
+title: changelog
 headline: robots building websites since 2014
 layout: page
 ---
