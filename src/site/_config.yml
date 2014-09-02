@@ -1,5 +1,15 @@
-name: zman.io
-rss: sbt-ghreadme.xml
-markdown: redcarpet
-pygments: true
-layouts: ./_zman.io/_layouts
+title:         zman.io
+description:   readme files in your sbt-site
+logo:          logo.png
+default_bg:    sbt-ghreadme.jpg
+layouts:       ./_includes/_layouts
+url:           "http://zman.io"
+    
+timezone:      America/Denver
+permalink:     /posts/:categories/:title
+paginate:      7
+paginate_path: "page:num"
+future:        false
+pygments:      true
+markdown:      redcarpet
+
