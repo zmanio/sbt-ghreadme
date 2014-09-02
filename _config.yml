@@ -1,7 +1,7 @@
 title:         zman.io
 description:   readme files in your sbt-site
 logo:          logo.png
-default_bg:    sbt-ghreadme.jpg
+default_bg:    ghreadme.jpg
 layouts:       ./_includes/_layouts
 url:           "http://zman.io"
     

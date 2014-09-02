@@ -2,7 +2,6 @@
 title: sbt-ghreadme
 headline: github readmes moonlighting as jekyll documents
 layout: home
-cover: sbt-ghreadme.jpg
 ---
 sbt-ghreadme
 
