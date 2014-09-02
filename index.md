@@ -92,7 +92,5 @@ readmeMappings += {
 }
 ```
 
-This example will map the ```docs/main.md``` file in your project to the ```site-docs/index.md``` file in your generated site. While this behavior is allowed, the next section describes why this usage is discouraged.
-
-### Linking Between READMEs
+This example will map the ```docs/main.md``` file in your project to the ```site-docs/index.md``` file in your generated site.
 
