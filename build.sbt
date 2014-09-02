@@ -17,7 +17,7 @@ sbtVersion in Global := "0.13.2"
 
 scalaVersion in Global := "2.10.4" 
 
-description := "A SBT plugin that extends sbt-site by converting github-style README files into Jekyll documents to be included in the site."
+description := "Readme files in your sbt-site."
 
 homepage := Some(url("http://zman.io/sbt-ghreadme/"))
 
@@ -52,11 +52,11 @@ ghreadme.settings
 readmeMappings ++= Seq(
   "." --- Seq(
     "title"   -> "sbt-ghreadme",
-    "headline" -> "github readmes moonlighting as jekyll documents",
+    "headline" -> "readme files in your sbt-site",
     "layout"  -> "home"
   ),
   "changelog" --- Seq(
-    "title"   -> "sbt-ghreadme history",
+    "title"   -> "changelog",
     "headline" -> "robots building websites since 2014",
     "layout"  -> "page"
   )

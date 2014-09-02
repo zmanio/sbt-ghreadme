@@ -1,6 +1,4 @@
-sbt-ghreadme
-
-The [sbt-ghreadme](http://zman.io/sbt-ghreadme/) project is a SBT plugin that extends [sbt-site](https://github.com/sbt/sbt-site) by converting GitHub-style README files into Jekyll documents to be included in the site.
+A [SBT](http://www.scala-sbt.org/) plugin that extends [sbt-site](https://github.com/sbt/sbt-site) by prepending YAML front matter to your github-style README files and including them in the generated site. This allows you to use the same documentation in multiple contexts without any manual duplication.
 
 This plugin is aimed at projects that:
 
@@ -12,7 +10,7 @@ This plugin is aimed at projects that:
 
 This plugin provides a minimal DSL that is used to describe what README files are to be included in your site as well as the YAML front-matter to associate with each file.
 
-[Change Log](changelog/)
+[source](https://github.com/zmanio/sbt-ghreadme) - [documentation](http://zman.io/sbt-ghreadme/api/#io.zman.ghreadme.package) - [changelog](changelog/)
 
 [![Build Status](https://travis-ci.org/zmanio/rummage.png?branch=master)](https://travis-ci.org/zmanio/rummage)
 

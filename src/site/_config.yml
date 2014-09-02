@@ -1,9 +1,9 @@
-title:         zman.io
+title:         sbt-ghreadme
 description:   readme files in your sbt-site
 logo:          logo.png
 default_bg:    ghreadme.jpg
 layouts:       ./_includes/_layouts
-url:           "http://zman.io"
+url:           "http://zman.io/sbt-ghreadme"
     
 timezone:      America/Denver
 permalink:     /posts/:categories/:title
